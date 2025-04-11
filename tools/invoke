@@ -1,0 +1,36 @@
+#!/bin/bash
+
+SEL=$1
+ASEL=$2
+tmp=""
+
+f_sep() {
+    raw=$(cat $1)
+    hdr="$(echo "$raw" | head -n 1 | sed "s/^[[:space:]]*#[[:space:]]*//")"
+    subject=$(echo ${hdr%%:*} | tr "[:lower:]" "[:upper:]")
+    title=$(echo "${hdr#*:}" | sed "s/^ *//" | tr "[:lower:]" "[:upper:]")
+
+    if [[ "${raw:0:1}" != '#' ]]
+    then
+        echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+        echo "ERROR: $1 has no title"
+        echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+        rm -f $(tmp)
+        exit 1
+    fi
+    echo -e "\n@ $title ($subject) @\n" >>$tmp
+    echo "********************************" >>$tmp
+    echo "$(tail -n +2 $f | grep -E '.{1,15}')-" >>$tmp
+    echo "********************************" >>$tmp
+}
+
+cd brain/
+tmp=$(mktemp)
+
+for f in **/*
+do
+    [ -f "$f" ] && f_sep "$f"
+done
+
+less $tmp
+rm -f $tmp
