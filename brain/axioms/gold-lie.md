@@ -81,7 +81,7 @@ stacked in erratic and messy ways
 new ones made to contradict old ones
 new ones made to contradict current ones
 new ones to enforce some stupid societal "norm"
-they say
+we say
 normal is a dryer setting
 this mess of "forced societal agreements" make it near
 impossible for humans to diverge away from the use of currency
