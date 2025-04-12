@@ -15,7 +15,7 @@ f_sep() {
         echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
         echo "ERROR: $1 has no title"
         echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-        rm -f $(tmp)
+        rm -f $tmp
         exit 1
     fi
     echo -e "\n@ $title ($subject) @\n" >>$tmp
