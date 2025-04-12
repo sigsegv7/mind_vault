@@ -4,6 +4,7 @@ ive always wanted to change the world
 as when i was very young
 i noticed issues in how things were structured
 how sufferings could be avoidable yet not at the same time
+
 and those who are in a position where they wont suffer
 dont understand
 because theyve never been in such positions
@@ -75,14 +76,16 @@ currency is not a required method of survival
 if you have a high enough number
 you may rot on the couch and get what you want when you
 want it at the expense of innocent and brainwashed souls
+
 the system attempts to brainwash humans by attempting
 to enforce these things they call "laws" and they are
 stacked in erratic and messy ways
+
 new ones made to contradict old ones
 new ones made to contradict current ones
 new ones to enforce some stupid societal "norm"
-we say
-normal is a dryer setting
+we say normal is a dryer setting
+
 this mess of "forced societal agreements" make it near
 impossible for humans to diverge away from the use of currency
 without the threat of harmful action taken by oppressive and
